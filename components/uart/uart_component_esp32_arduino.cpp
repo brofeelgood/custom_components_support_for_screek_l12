@@ -184,9 +184,9 @@ void ESP32ArduinoUARTComponent::flush() {
 
 void ESP32ArduinoUARTComponent::check_logger_conflict() {
 #ifdef USE_LOGGER
-  if (this->hw_serial_ == nullptr || logger::global_logger->get_baud_rate() == 0) {
-    return;
-  }
+  // if (this->hw_serial_ == nullptr || logger::global_logger->get_baud_rate() == 0) {
+  //   return;
+  // }
 
   // if (this->hw_serial_ == logger::global_logger->get_hw_serial()) {
   //   ESP_LOGW(TAG, "  You're using the same serial port for logging and the UART component. Please "
